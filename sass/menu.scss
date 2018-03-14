@@ -30,9 +30,9 @@ Header{
 /*hvordan ser indholdet ud i hamburgermenuen*/
     .overlayer{
       position: relative;
-      top: 10%;
-      right: 5%;
-      text-align: right;
+      top: 5%;
+      // left: 5%;
+      text-align: left;
       font-size: 10%;
       margin-top: 30px;
       text-decoration: none;
@@ -40,11 +40,20 @@ Header{
     /*hvordan linkene ser ud i overlay*/
          a{
           padding: 8px;
+          left: 5%;
           text-decoration: none;
           font-size: 36px;
           color: #ffffff;
           display: block;
           transition: 0.3s;
+
+        }
+        .linje{
+          border-top: 2px white solid;
+          width: 100%;
+          padding: 0;
+          left: 0;
+          margin: 2% 0;
         }
     /*giver farve nÃ¥r der holdes over indholdet*/
           :hover :focus{
@@ -100,7 +109,7 @@ nav{
     span{
       display: none;
     }
-  }
+
     /*stylling for menu for desktop*/
   /* Navbar container */
   nav {
@@ -116,21 +125,22 @@ nav{
 
 
 
-    li {
+    a {
+      display: block;
       float: right;
-      font-size: 16px;
+      font-size: 20px;
       color: white;
       text-align: center;
       padding: 14px 16px;
       text-decoration: none;
-      background-color: #87aa44;
 
-      :hover{
-        background-color: red;
+      &:hover{
+        background-color: #80a041;
+        // color: green;
       }
     }
   }
-
+ }
 }
 
   @media screen and (min-width: 920px) {

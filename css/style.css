@@ -34,9 +34,8 @@ Header .navi {
 }
 Header .navi .overlayer {
   position: relative;
-  top: 10%;
-  right: 5%;
-  text-align: right;
+  top: 5%;
+  text-align: left;
   font-size: 10%;
   margin-top: 30px;
   text-decoration: none;
@@ -45,12 +44,20 @@ Header .navi .overlayer {
 }
 Header .navi .overlayer a {
   padding: 8px;
+  left: 5%;
   text-decoration: none;
   font-size: 36px;
   color: #ffffff;
   display: block;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+Header .navi .overlayer .linje {
+  border-top: 2px white solid;
+  width: 100%;
+  padding: 0;
+  left: 0;
+  margin: 2% 0;
 }
 Header .navi .overlayer :hover :focus {
   color: #f1f1f1;
@@ -83,6 +90,8 @@ nav {
     background: #e6e6e6;
     width: 100%;
     font-weight: lighter;
+    /*stylling for menu for desktop*/
+    /* Navbar container */
   }
   header a img {
     width: 200px;
@@ -93,10 +102,7 @@ nav {
   header span {
     display: none;
   }
-
-  /*stylling for menu for desktop*/
-  /* Navbar container */
-  nav {
+  header nav {
     float: right;
     display: inline-block;
     list-style-type: none;
@@ -107,34 +113,21 @@ nav {
     width: 100%;
     /* Links inside the navbar */
   }
-  nav li {
+  header nav a {
+    display: block;
     float: right;
-    font-size: 16px;
+    font-size: 20px;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    background-color: #87aa44;
   }
-  nav li :hover {
-    background-color: red;
+  header nav a:hover {
+    background-color: #80a041;
   }
 }
-body header div .headericon {
-  float: right;
-  margin: 2% 2% 0% 2%;
-  width: 20%;
-}
-body header div .headericon i {
-  float: right;
-  margin: 5%;
-  width: 40%;
-  text-align: center;
-  font-size: 22px;
-}
-body header div .headericon i p {
-  font-size: 12px;
-  text-align: center;
+body header .headericon {
+  display: none;
 }
 body Form {
   clear: both;
@@ -177,18 +170,56 @@ body Form div button .submit {
 body Form div button :hover {
   background: red;
 }
+body main {
+  width: 85%;
+  margin: auto;
+}
+body main div {
+  height: auto;
+  margin: 4% 0;
+}
+body main div img {
+  width: 100%;
+  height: 150px;
+}
+body main div h2 {
+  display: none;
+  text-align: center;
+}
+body main div p {
+  display: none;
+}
+body main div button {
+  display: none;
+  float: right;
+  margin: 2%;
+}
 body footer {
   width: 100%;
   height: 100px;
-  background-color: red;
+  background-color: #e6e6e6;
+}
+body footer p {
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+}
+body footer p a {
+  color: #87aa44;
 }
 
 @media screen and (min-width: 685px) {
   body header div .headericon {
+    display: block;
     float: right;
+    margin: 2% 2% 0% 2%;
     width: 15%;
   }
   body header div .headericon i {
+    float: right;
+    margin: 5%;
+    width: 40%;
+    text-align: center;
     font-size: 28px;
   }
   body header div .headericon i p {
