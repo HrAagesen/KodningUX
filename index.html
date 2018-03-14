@@ -10,14 +10,63 @@
   </head>
 
   <body>
+
 <header>
+
+  <div>
+
+    <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+    <div class="headericon">
+      <i class="fa fa-shopping-cart fa-2x"><p>Kurv</p></i>
+      <i class="fas fa-user-circle fa-2x"><p>Login</p></i>
+    </div>
+
+
+    <div id=mynav class=navi> <!--yderste lag-->
+      <a href="javascript:void(0)" class="closebut" onclick="closeNav()">&times;</a> <!-- knap til at lukke nav-->
+
+<!--Her er det som er inde i hamburgermenuen-->
+      <div class="overlayer"> <!--indhold i yderste lag-->
+        <a href=""></a>
+        <a href="">Musik</a>
+        <a href="">Teater</a>
+        <a href="">Sport</a>
+        <a href="">Spillested</a>
+
+      </div>
+
+    </div>
+
+    <span onclick="openNav()">☰ Menu</span> <!--open nav-->
+
+  </div>
 
 </header>
 
+<nav class="navbar">
 
-<input type="date" id="myDate" placeholder="Fra">
-<input type="text" id="from" name="fromdate" class="texta1 hasDatepicker" autocomplete="off" placeholder="Fra" value="">
+  <a href=""><li>Spillested</li></a>
+  <a href=""><li>Sport</li></a>
+  <a href=""><li>Teater</li></a>
+  <a href=""><li>Musik</li></a>
 
+</nav>
+
+<form action="mailto:email@email.com" method="post" autocomplete="on">
+  <h2>Søg efter billetter</h2>
+
+  <div>
+    <input type="search" name="search" placeholder="Find kunstner, begivenhed, Spillested">
+    <button type="submit" class="submit">Søg</button>
+  </div>
+
+</form>
+
+
+<footer>
+<h2>om os</h2><h2>kontakt</h2>
+
+</footer>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

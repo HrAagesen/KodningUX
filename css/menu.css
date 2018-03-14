@@ -1,11 +1,4 @@
 @charset "UTF-8";
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 /*hamburger menu starter her*/
 Header {
   clear: both;
@@ -118,90 +111,5 @@ nav {
   }
   nav li :hover {
     background-color: red;
-  }
-}
-body header div .headericon {
-  float: right;
-  margin: 2% 2% 0% 2%;
-  width: 20%;
-}
-body header div .headericon i {
-  float: right;
-  margin: 5%;
-  width: 40%;
-  text-align: center;
-  font-size: 22px;
-}
-body header div .headericon i p {
-  font-size: 12px;
-  text-align: center;
-}
-body Form {
-  clear: both;
-  width: 100%;
-  background-color: #185970;
-  height: 120px;
-}
-body Form h2 {
-  padding: 1%;
-  margin-left: 5%;
-}
-body Form div {
-  width: 90%;
-  height: 30%;
-  margin-left: 5%;
-  margin-right: 5%;
-  border: none;
-  background-color: white;
-}
-body Form div input {
-  width: 82%;
-  border: none;
-  margin: 2% 1.5%;
-  font-size: 16px;
-}
-body Form div button {
-  height: 100%;
-  width: 15%;
-  right: 0;
-  margin: 0;
-  padding: 0;
-  background: #87aa44;
-  border: none;
-  cursor: pointer;
-  float: right;
-}
-body Form div button .submit {
-  width: 50%;
-}
-body Form div button :hover {
-  background: red;
-}
-body footer {
-  width: 100%;
-  height: 100px;
-  background-color: red;
-}
-
-@media screen and (min-width: 685px) {
-  body header div .headericon {
-    float: right;
-    width: 15%;
-  }
-  body header div .headericon i {
-    font-size: 28px;
-  }
-  body header div .headericon i p {
-    font-size: 18px;
-    text-align: center;
-  }
-}
-@media screen and (min-width: 920px) {
-  body {
-    width: 920px;
-    margin: auto;
-  }
-  body Form div input {
-    margin: 1.5%;
   }
 }
